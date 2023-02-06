@@ -29,7 +29,7 @@ public class InitializeDefaultConfig {
         User user = userService.signup("user", "user");
         noteService.saveNote(user, "테스트", "테스트입니다.");
         noteService.saveNote(user, "테스트2", "테스트2입니다.");
-        noteService.saveNote(user, "테스트3", "테스트3입니다.");
+        noteService.saveNote(user, "제목", "내용입니다.");
         noteService.saveNote(user, "여름 여행계획", "여름 여행계획 작성중...");
     }
 
@@ -39,6 +39,7 @@ public class InitializeDefaultConfig {
     @Bean
     public void initializeDefaultAdmin() {
         userService.signupAdmin("admin", "admin");
+        noticeService.saveNotice("공지사항", "공지사항 첫 번째 게시글 입니다.");
         noticeService.saveNotice("환영합니다.", "환영합니다 여러분");
         noticeService.saveNotice("노트 작성 방법 공지", "1. 회원가입\n2. 로그인\n3. 노트 작성\n4. 저장\n* 본인 외에는 게시글을 볼 수 없습니다.");
     }
