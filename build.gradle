@@ -15,9 +15,9 @@ repositories {
 dependencies {
     // web mvc 추가
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    // 이 강의의 주제인 Security 추가
+    // Security 추가
     implementation 'org.springframework.boot:spring-boot-starter-security'
-    // 웹 페이지를 쉽게 생성하기 위해 thymeleaf 추가
+    // thymeleaf 추가
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     // Thymeleaf에서 SpringSecurity를 Integration
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
